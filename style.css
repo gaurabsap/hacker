@@ -1,0 +1,134 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+    background-image: linear-gradient(to right, #fffbd5, #b20a2c);
+}
+
+.bar {
+    width: 20px;
+    margin-top: 3px;
+    position: relative;
+    top: 6px;
+    right: 8px;
+}
+.bar:hover{
+    cursor: pointer;
+}
+
+.back {
+    width: 1349px;
+    z-index: -1;
+}
+
+.navigator {
+    /* background-color: rgba(1, 2, 9, 0.7); */
+    /* border: 3px solid green; */
+    text-align: end;
+    padding: 0px 20px;
+    height: 80px;
+    position: relative;
+    top: -50px;
+    /* background-image: url('1.jpg'); */
+    background-size: cover;
+    padding-top: 20px;
+
+}
+
+nav {
+    /* border: 3px solid red; */
+}
+
+nav a {
+    font-weight: 700;
+    text-decoration: none;
+    margin-right: 60px;
+    /* color: white; */
+    /* border: 3px solid green; */
+    padding: 10px 20px;
+    /* background-image: linear-gradient(to right, #895cf2 0%, #ffabf4 50%, #895cf2 100%); */
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+nav a:hover{
+    background-image: linear-gradient(to right, #895cf2 0%, #ffabf4 50%, #895cf2 100%);
+    transition: 0.5s;
+}
+
+.first {
+    color: red;
+    font-size: 50px;
+    position: relative;
+    top: 3px;
+}
+
+.second {
+    display: flex;
+}
+
+.header{
+    position: absolute;
+    left: 60px;
+    top: 190px;
+}
+.heading{
+    font-size: 60px;
+    width: 400px;
+}
+.para{
+    margin-top: 10px;
+    width: 400px;
+}
+
+.head {
+    color: red;
+    position: relative;
+    left: 50px;
+}
+
+.hacker {
+    width: 80%;
+    position: absolute;
+    left: 450px;
+    top: -100px; 
+    z-index: -100;
+}
+.hacker.anime{
+    animation-delay: 1s;
+}
+.anime {
+    opacity: 0;
+    /* transform: rotate(-60deg); */
+    transform: translateY(0px);
+    animation: ani 1s linear forwards 1;
+
+}
+
+@keyframes ani {
+    100%{
+        opacity: 1;
+        /* transform: rotate(0deg); */
+        transform: translateY(-110px);
+        /* transform: scale(4px); */
+    }
+}
+
+.anim{
+    transform: rotateY(100deg);
+    opacity: 0;
+    animation: nav 0.8s linear forwards;
+}
+
+@keyframes nav {
+    100%{
+        opacity: 1;
+        transform: rotateY(0deg);
+    }
+
+    
+}
